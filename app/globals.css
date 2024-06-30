@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.anim {
+    @apply hover:duration-500 duration-500 transition-all hover:scale-105
+}
