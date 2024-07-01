@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigate from "@/modules/navigation/Navigate";
 import Base from "@/modules/base/Base";
 import AnimatedCursor from "react-animated-cursor"
+import Head from "next/head";
 
 const space = Space_Grotesk({ subsets: ["latin"] });
 
@@ -14,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scrollbar scroll-smooth">
+      <Head>
+        <meta name="google-site-verification" content="BjJGrnjyX00B5oju6pH0xHfKH4E8ciPRntnCVkLbdpE" />
+      </Head>
       <body className={space.className}>
         <Navigate />
         <AnimatedCursor
