@@ -1,8 +1,11 @@
 import React from 'react'
+import Showcase from './Showcase'
 
 function page() {
     return (
-        <div>work page</div>
+        <>
+            <Showcase />
+        </>
     )
 }
 

@@ -21,7 +21,7 @@ const Featured = () => {
     }, []);
 
     return (
-        <div className="text-zinc-950">
+        <div className="text-zinc-950 p-4">
             <div id="typed-strings" className="hidden">
                 <p>Websites</p>
                 <p>Digital Products</p>

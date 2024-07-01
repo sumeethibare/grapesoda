@@ -25,7 +25,9 @@ export default function Template({ children }) {
         id="banner-4"
         className="h-screen bg-black z-50 fixed top-0 right-3/4 w-1/4"
       />
-      {children}
+      <div id="page-content">
+        {children}
+      </div>
     </div>
   );
 }

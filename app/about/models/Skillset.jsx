@@ -6,7 +6,7 @@ const Skillset = () => {
     useEffect(() => {
         const options = {
             stringsElement: '#typed-strings',
-            typeSpeed: 40,
+            typeSpeed: 10,
             backDelay: 1000,
             loop: false,
             loopCount: 0,

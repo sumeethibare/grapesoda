@@ -1,13 +1,14 @@
 import React from 'react'
 import AboutShow from './models/AboutShow'
-import AboutBio from './models/AboutBio'
+import Offerings from './models/Offerings'
+import IntroCom from './models/IntroCom'
 
 function page() {
     return (
         <>
             <AboutShow />
-            <AboutBio />
-
+            <Offerings />
+            <IntroCom />
         </>
     )
 }

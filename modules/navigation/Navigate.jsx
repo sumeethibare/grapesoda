@@ -7,8 +7,9 @@ const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Work', href: '/work' },
-    { name: 'Store', href: '/store' },
-    { name: 'Organization', href: '/organization' },
+    { name: 'Storage', href: '/storage' },
+    { name: 'Community', href: '/community' },
+    { name: 'Blog', href: '/blog' },
 ]
 
 export default function Example() {
@@ -20,12 +21,12 @@ export default function Example() {
                 <div className="flex lg:hidden">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-700 float-right right-5 top-5 absolute"
+                        className="-m-2.5 inline-flex items-center fixed justify-center rounded-md p-2.5 text-zinc-700 float-right right-5 top-5"
                         onClick={() => setMobileMenuOpen(true)}>
-                        <Bars2Icon className="h-6 w-6" aria-hidden="true" />
+                        <Bars2Icon className="h-8 w-8 stroke-zinc-950 stroke-2" aria-hidden="true" />
                     </button>
                 </div>
-                <div className="hidden fixed lg:flex lg:gap-x-6 px-6 bg-base-200 p-2 rounded-xl">
+                <div className="hidden fixed lg:flex lg:gap-x-6 px-6 bg-slate-100 p-2 rounded-2xl">
                     {navigation.map((item) => (
                         <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-zinc-600 hover:text-zinc-950">
                             {item.name}
@@ -46,7 +47,7 @@ export default function Example() {
                             type="button"
                             className="-m-2.5 rounded-md p-2.5 text-zinc-700 float-right right-5 top-5 absolute"
                             onClick={() => setMobileMenuOpen(false)}>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            <XMarkIcon className="h-8 w-8 stroke-zinc-950 stroke-2" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
@@ -55,8 +56,8 @@ export default function Example() {
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
-                                        href={item.href} onClick={() => setMobileMenuOpen(false)}
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-900 hover:bg-zinc-50"
+                                        href={item.href} onClick={() => setMobileMenuOpen(true)}
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold leading-7 text-zinc-900 hover:bg-zinc-50"
                                     >
                                         {item.name}
                                     </a>
@@ -64,7 +65,7 @@ export default function Example() {
                             </div>
                             <div className="py-6">
                                 <a href='/hire'
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-zinc-900 hover:bg-zinc-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-2xl  font-semibold leading-7 text-zinc-900 hover:bg-zinc-50"
                                 >
                                     Hire Me <span aria-hidden="true">&rarr;</span>
                                 </a>

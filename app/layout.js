@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <Navigate />
         <AnimatedCursor
           innerSize={6}
-          outerSize={9}
+          outerSize={10}
           color='193, 11, 111'
           outerAlpha={0.1}
           innerScale={0.1}
@@ -40,7 +40,9 @@ export default function RootLayout({ children }) {
             '.link'
           ]}
         />
-        {children}
+        <div className="h-dvh">
+          {children}
+        </div>
         <Base />
       </body>
     </html>
